@@ -1,3 +1,89 @@
-<html>
-    <hea
-</html>
+* {
+   
+   
+    margin: 0;
+    padding: 0;
+}
+tbody button{
+
+
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: pink;
+    text-align: center;
+    margin-right: 14px;
+}
+tbody td {
+
+
+    float: left;
+}
+thead input{
+
+
+    height: 35px;
+    width: 200px;
+    
+}
+<div class="box">
+    <table>
+        <thead>
+            <tr>
+                <td colspan="4"><input type="text" id="input_box"></td>
+            </tr>
+        </thead>
+       <tbody>
+           <!-- 第一排 -->
+           <tr> 
+               <td><button class="num" id="7" onclick="jsq(this.id)">7</button></td>
+               <td><button class="num" id="8" onclick="jsq(this.id)">8</button></td>
+               <td><button class="num" id="9" onclick="jsq(this.id)">9</button></td>
+               <td><button id="+" onclick="jsq(this.id)">+</button></td>
+           </tr>
+           <!-- 第二排 -->
+           <tr>
+            <td><button class="num" id="4" onclick="jsq(this.id)">4</button></td>
+            <td><button class="num" id="5" onclick="jsq(this.id)">5</button></td>
+            <td><button class="num" id="6" onclick="jsq(this.id)">6</button></td>
+            <td><button id="-" onclick="jsq(this.id)">-</button></td>
+           </tr>
+           <!-- 第三排 -->
+           <tr>
+            <td><button class="num" id="1" onclick="jsq(this.id)">1</button></td>
+            <td><button class="num" id="2" onclick="jsq(this.id)">2</button></td>
+            <td><button class="num" id="3" onclick="jsq(this.id)">3</button></td>
+            <td><button id="*" onclick="jsq(this.id)">*</button></td>
+           </tr>
+           <!-- 第四排 -->
+           <tr>
+            <td><button class="num" id="0" onclick="jsq(this.id)">0</button></td>
+            <td><button class="num"  onclick="AC()">AC</button></td>
+            <td><button class="num" id="=" onclick="res()">=</button></td>
+            <td><button id="/" onclick="jsq(this.id)">/</button></td>
+           </tr>
+       </tbody>
+    </table>
+</div>
+<!-- 獲取輸入框-->
+        var input_box = document.querySelector('#input_box');
+        <!--console.log(input_box);
+        // 獲取輸入的值-->
+        var num = document.querySelectorAll('.num');
+        <!--// 獲取計算器輸入框數字-->
+        function jsq(num){
+   
+   
+            input_box.value += num; <!--// 所有按鈕呼叫此函式，讓輸入框得到每次點選獲取值的字串拼接-->
+        }
+        function res(){
+   
+   
+            input_box.value = eval(input_box.value); <!--// 最後把拼接的字串通過eval()系統函式計算結果-->
+        }
+        function AC(){
+            input_box.value = ' ';
+            <!--// console.log(5);-->
+        }
+        ```
+
