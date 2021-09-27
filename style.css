@@ -1,70 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-body{
-    font-family: 'Roboto', sans-serif;
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
-}
-
-.calc-btn{
-    background-color:silver;
-    color:black;
-    width: 25px;
-    height: 45px;
-    border: 1px solid gray;
-    text-align: center ;
-    cursor: pointer;
-    font-size: 32px;
-    font-weight: 100px;
-    padding-top: 3px;
-}
-.calc-btn:hover{
-    background-color: orange;
-}
-.row{
-    display: table;
-    table-layout: fixed;
-    width: 200px ;
-}
-.colmun{
-    display: table-cell;
-}
-#calc-zero{
-    width:52.66666667px;
-    border-radius: 0 0 0 7px;
-}
-#calc-clear{
-    width:52.66666667px;
-}
-
-#calc-display-val{
-    height: 80px;color: white;
-    text-align: right;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-top: 1px solid gray;
-    font-size: 48px;
-    background-color: #383838;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  section {
+    background-color: rgb(18, 26, 31);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(39, 55, 59);
+    border-radius: 8px;
     overflow: hidden;
-    white-space: nowrap;
-    padding: 12px;
-    border-radius: 7px 7px 0 0;
-}
-
-.calc-btn-operator {
-    background-color: orange;
-    color: white;
-}
-h1 {
-    text-align: center;
-    margin-top: 50px;
-}
-#calc-equals {
-    border-radius: 0 0 7px 0;
-}
-#calc-perent {
-    margin-left:calc(50% - 100px);
-}
+  }
+  .display {
+    background-color: rgb(182, 182, 182);
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+  }
+  .display-1 {
+    opacity: 0.4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .temp-result {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: 0.3;
+  }
+  .all_button {
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  }
+  .button {
+    border: 0.5px solid rgba(92, 92, 92, 0.137);
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: rgb(30, 43, 46);
+  }
+  .btn-0 {
+    grid-column: 1/3;
+  }
+  
