@@ -45,51 +45,51 @@ operationEl.forEach((operation) => {
     });
   });
   function clearVar(name = "") {
-    dis1Num += Num2 + " " + name + " ";
-    lastDisplay.innerText = dis1Num;
+    Num1 += Num2 + " " + name + " ";
+    lastDisplay.innerText = Num1;
     presentDisplay.innerText = "";
-    dis2Num = "";
+    Num2 = "";
     tempResultEl.innerText = result;
   }
   
   function mathOperation() {
     if (lastOperation === "x") {
-      result = parseFloat(result) * parseFloat(dis2Num);
+      result = parseFloat(result) * parseFloat(Num2);
     } else if (lastOperation === "+") {
-      result = parseFloat(result) + parseFloat(dis2Num);
+      result = parseFloat(result) + parseFloat(Num2);
     } else if (lastOperation === "-") {
-      result = parseFloat(result) - parseFloat(dis2Num);
+      result = parseFloat(result) - parseFloat(Num2);
     } else if (lastOperation === "/") {
-      result = parseFloat(result) / parseFloat(dis2Num);
+      result = parseFloat(result) / parseFloat(Num2);
     } else if (lastOperation === "%") {
-      result = parseFloat(result) % parseFloat(dis2Num);
+      result = parseFloat(result) % parseFloat(Num2);
     }
   }
   // operation();
   
-  equalEl.addEventListener("click", () => {
-    if (!dis2Num || !dis1Num) return;
+  equal.addEventListener("click", () => {
+    if (!Num2 || !Num1) return;
     haveDot = false;
     mathOperation();
     clearVar();
-    display2El.innerText = result;
+    presentDisplay.innerText = result;
     tempResultEl.innerText = "";
-    dis2Num = result;
-    dis1Num = "";
+    Num2 = result;
+    Num1 = "";
   });
   
   clearAllEl.addEventListener("click", () => {
-    dis1Num = "";
-    dis2Num = "";
-    display1El.innerText = "";
-    display2El.innerText = "";
+    Num1 = "";
+    Num2 = "";
+    lastDisplay.innerText = "";
+    presentDisplay.innerText = "";
     result = "";
     tempResultEl.innerText = "";
   });
   
   clearLastEl.addEventListener("click", () => {
-    display2El.innerText = "";
-    dis2Num = "";
+    presentDisplay.innerText = "";
+    Num2 = "";
   });
   
   window.addEventListener("keydown", (e) => {
@@ -136,16 +136,3 @@ operationEl.forEach((operation) => {
     equalEl.click();
   }
 
-
-
-
-
-/** 
-var value=0 
-var Lvalue=0 
-var answer=0 
-function add(value,Lvalue){
-    return(value+Lvalue)
-}
-<button onclick="add(3,3)"></button>
-*/
