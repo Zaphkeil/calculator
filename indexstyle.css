@@ -21,8 +21,8 @@ html {
     overflow: hidden;
   }
   
-  .shape-ex1{
-    color: #000;
+  .all_button{
+    color: rgb(255, 255, 255);
     width: 150px;
     height: 40px;
     display: block;
