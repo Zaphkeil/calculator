@@ -6,6 +6,7 @@
   /* 輸入字體*/
   html {
     font-family: "Montserrat", sans-serif;
+    /* 無法highlight*/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */

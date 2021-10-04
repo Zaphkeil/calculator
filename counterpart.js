@@ -34,7 +34,7 @@ operationEl.forEach((operation) => {
       if (!Num2) return;
       haveDot = false;
       const operationName = e.target.innerText;
-      if (dis1Num && dis2Num && lastOperation) {
+      if (Num1 && Num2 && lastOperation) {
         mathOperation();
       } else {
         result = parseFloat(Num2);
@@ -45,7 +45,7 @@ operationEl.forEach((operation) => {
     });
   });
   function clearVar(name = "") {
-    dis1Num += dis2Num + " " + name + " ";
+    dis1Num += Num2 + " " + name + " ";
     lastDisplay.innerText = dis1Num;
     presentDisplay.innerText = "";
     dis2Num = "";
