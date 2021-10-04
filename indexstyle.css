@@ -11,15 +11,6 @@ html {
     align-items: center;
     justify-content: center;
   }
-
-    /**/
-  .container {
-    width: 90%;
-    max-width: 400px;
-    background-color: rgb(39, 55, 59);
-    border-radius: 8px;
-    overflow: hidden;
-  }
   
   .all_button{
     color: rgb(255, 255, 255);
