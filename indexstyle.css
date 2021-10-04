@@ -1,20 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  /* 輸入字體*/
-  html {
-    font-family: "Montserrat", sans-serif;
-    /* 無法highlight*/
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-  }
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: placeholder this should be the rest of the output you got from Google fonts
+}
   /* 背景*/
   section {
     background-color: rgb(18, 26, 31);
@@ -24,7 +11,8 @@
     align-items: center;
     justify-content: center;
   }
-  /**/
+
+    /**/
   .container {
     width: 90%;
     max-width: 400px;
@@ -32,28 +20,7 @@
     border-radius: 8px;
     overflow: hidden;
   }
-  .display {
-    background-color: rgb(182, 182, 182);
-    height: 100px;
-    width: 100%;
-    text-align: right;
-    padding: 20px;
-    font-size: 30px;
-    position: relative;
-  }
-  .display-1 {
-    opacity: 0.4;
-    font-size: 20px;
-    height: 20px;
-    overflow: hidden;
-  }
-  .temp-result {
-    position: absolute;
-    bottom: 0;
-    left: 10;
-    font-size: 20px;
-    opacity: 0.3;
-  }
+  
   .all_button {
     color: whitesmoke;
     display: grid;
@@ -77,4 +44,3 @@
   .btn-0 {
     grid-column: 1/3;
   }
-  
