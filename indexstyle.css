@@ -21,8 +21,13 @@ html {
     overflow: hidden;
   }
   
-  .all_button {
-    color: whitesmoke;
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  .shape-ex1{
+    color: #000;
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    background-color: transparent;
   }
