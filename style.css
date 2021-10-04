@@ -3,9 +3,18 @@
     margin: 0;
     box-sizing: border-box;
   }
+  /* 輸入字體*/
   html {
     font-family: "Montserrat", sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
   }
+  /* 背景*/
   section {
     background-color: rgb(18, 26, 31);
     min-height: 100vh;
@@ -14,6 +23,7 @@
     align-items: center;
     justify-content: center;
   }
+  /**/
   .container {
     width: 90%;
     max-width: 400px;
@@ -48,8 +58,9 @@
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
   }
+  /*按鈕*/
   .button {
-    border: 0.5px solid rgba(92, 92, 92, 0.137);
+    border: 0.5px solid red (92, 92, 92, 0.137);
     display: inline-block;
     height: 100px;
     width: 100%;
