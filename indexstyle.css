@@ -25,13 +25,14 @@ html {
   }
 
   .button {
-    margin-top: 5px;
-    width: 150px;
-    height: 40px;
+    margin-top: 10px;
+    font-size: 35px;
+    width: 300px;
+    height: 80px;
     display: block;
     text-align: center;
     cursor: pointer;
-    line-height: 40px;
+    line-height: 80px;
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
