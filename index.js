@@ -6,6 +6,6 @@ calculatorlink.addEventListener("click", function(){
 });
 
 githublink.addEventListener("click", function(){
-    window.open.href = 'https://github.com/Zaphkeil/calculator';
+    window.open(https://github.com/Zaphkeil/calculator);
 });
 
