@@ -1,5 +1,6 @@
 /**querySelector 是選取class屬性 */
 /**class 可在ＨＴＭＬ文件中被多次使用 */
+/**const 為宣告一個函數，其中const 為不可重複宣告，且具有區塊性 */
 const display1El = document.querySelector(".display-1");
 const display2El = document.querySelector(".display-2");
 const tempResultEl = document.querySelector(".temp-result");
@@ -13,7 +14,8 @@ let dis2Num = "";
 let result = null;
 let lastOperation = "";
 let haveDot = false;
-
+/**add~~為新增一個監聽事件，number為在這個宣告的函數下 */
+/**疑問:在電腦上是無法按照字符排列的，可能使用了n1=n1*10+n2 = n1 n2*/
 numbersEl.forEach((number) => {
     number.addEventListener("click", (e) => {
       if (e.target.innerText === "." && !haveDot) {
@@ -90,6 +92,7 @@ numbersEl.forEach((number) => {
     dis2Num = "";
   });
   
+  /**e.key 為偵測鍵盤行為，理由為div可以是字元，但button可以不用添加這函數 */
   window.addEventListener("keydown", (e) => {
     if (
       e.key === "0" ||

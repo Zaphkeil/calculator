@@ -24,7 +24,8 @@ html {
     justify-content: center;
   }
 
-  .all_button {
+  .button {
+    margin-top: 5px;
     width: 150px;
     height: 40px;
     display: block;
@@ -35,8 +36,9 @@ html {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
     transition: all .3s linear;
+    border-radius: 7px;
 }
-.all_button:hover{
+.button:hover{
     background-color: rgb(103, 142, 151);
     color: #fff;
 }
