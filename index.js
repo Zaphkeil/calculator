@@ -7,7 +7,8 @@ calculatorlink.addEventListener("click", function(){
 });
 
 randomlink.addEventListener("click", function(){
-    windows.location.href = 'https://zaphkeil.github.io/calculator/randomtool/';
+    window.location.href = 'https://zaphkeil.github.io/calculator/randomtool/';
+
 });
 
 githublink.addEventListener("click", function(){
