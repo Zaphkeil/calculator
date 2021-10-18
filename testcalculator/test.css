@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 20px; /* px means 'pixels': the base font size is now 10 pixels high  */
+      /* 無法highlight*/
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    }
+    /* 背景*/
+    section {
+        background-color: rgb(18, 26, 31);
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        margin-top: 5px;
+        width: 150px;
+        height: 40px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        transition: all .3s linear;
+        border-radius: 7px;
+    }
+    .button:hover{
+        background-color: rgb(103, 142, 151);
+        color: #fff;
+    }

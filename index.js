@@ -1,6 +1,6 @@
-var calculatorlink = document.querySelector(".calculatorlink");
-var randomlink = document.querySelector(".randomlink");
-var githublink = document.querySelector(".githublink");
+const calculatorlink = document.querySelector(".calculatorlink");
+const randomlink = document.querySelector(".randomlink");
+const githublink = document.querySelector(".githublink");
 
 calculatorlink.addEventListener("click", function(){
 	 window.location.href = 'https://zaphkeil.github.io/calculator/calculator/';
