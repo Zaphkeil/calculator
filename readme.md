@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Calculator" />
+  <img src="https://raw.githubusercontent.com/Zaphkeil/calculator/main/icon.ico" alt="Calculator" />
 
   &#xa0;
 
