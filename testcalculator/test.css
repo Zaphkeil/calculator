@@ -23,21 +23,56 @@
         align-items: center;
         justify-content: center;
       }
+      .container {
+        width: 90%;
+        max-width: 400px;
+        background-color: rgb(76, 156, 156);
+        border-radius: 8px;/*圓角*/
+        overflow: hidden;
+      }
+      .display {
+        background-color: rgb(182, 182, 182);
+        height: 100px;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        font-size: 30px;
+        position: relative;
+      }
+      .display-1 {
+        opacity: 0.4;
+        font-size: 20px;
+        height: 25px;
+        overflow: hidden;
+      }
+      .temp-result {
+        position: absolute;
+        bottom: 0;
+        left: 10;
+        font-size: 20px;
+        opacity: 0.3;
+      }
+      .all_button {
+        color: whitesmoke;
+        display: grid;
+        grid-template: repeat(4,1fr) / repeat(4,1fr);
+        margin: 5px;
+      }
       .button {
-        margin-top: 5px;
-        width: 150px;
-        height: 40px;
-        display: block;
-        text-align: center;
-        cursor: pointer;
-        line-height: 40px;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
-        border: 1px solid rgb(255, 255, 255);
-        transition: all .3s linear;
+        border: 0.1px whitesmoke(92.5, 92.5, 92.5, 0.137);
+        display: inline-block;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        cursor: pointer;/*游標改變*/
         border-radius: 7px;
-    }
-    .button:hover{
-        background-color: rgb(103, 142, 151);
-        color: #fff;
-    }
+        border-style:solid;
+        
+      }
+      /*設定滑鼠摸到超連結時會改變背景圖片*/ 
+      .button:hover {
+        background-color: rgb(30, 43, 46);
+      }
