@@ -5,45 +5,49 @@ const display1El = document.querySelector(".display-1");/*讀取html中的displa
 const display2El = document.querySelector(".display-2");/*讀取html中的display-2按鈕*/
 const tempResultEl = document.querySelector(".temp-result");/*讀取html中的temp-result按鈕*/
 const numbersEl = document.querySelectorAll(".number");/*讀取html中的number按鈕*/
+const oops = document.querySelectorAll(".del")
 const operationEl = document.querySelectorAll(".op");/*讀取html中的op按鈕*/
-const equalEl = document.querySelector(".equal");
+const equalEl = document.querySelector(".equal");/*讀取html中的equal按鈕*/
 const clearAllEl = document.querySelector(".all-clear");
 const clearLastEl = document.querySelector(".last-entity-clear");
 let dis1Num = "";
 let dis2Num = "";
 let result = null;
 let lastOperation = "";
-let haveDot = false;
+let haveDot = false;/**是否有小數點 */
 /**add~~為新增一個監聽事件，number為在這個宣告的函數下 */
 /**疑問:在電腦上是無法按照字符排列的，可能使用了n1=n1*10+n2 = n1 n2*/
+
+
+
 numbersEl.forEach((number) => {
-    number.addEventListener("click", (e) => {
-      if (e.target.innerText === "." && !haveDot) {
-        haveDot = true;
-      } else if (e.target.innerText === "." && haveDot) {
-        return;
-      }
-      dis2Num += e.target.innerText;
-      display2El.innerText = dis2Num;
-      // console.log();
-    });
+  number.addEventListener("click", (e) => {
+    if (e.target.innerHTML === "." && !haveDot) {
+      haveDot = true;
+    } else if (e.target.innerHTML === "." && haveDot) {
+      return;
+    }
+    dis2Num += e.target.innerHTML;
+    display2El.innerText = dis2Num;
+    // console.log();
   });
-  
-  operationEl.forEach((operation) => {
-    operation.addEventListener("click", (e) => {
-      if (!dis2Num) return;
-      haveDot = false;
-      const operationName = e.target.innerText;
-      if (dis1Num && dis2Num && lastOperation) {
-        mathOperation();
-      } else {
-        result = parseFloat(dis2Num);
-      }
-      clearVar(operationName);
-      lastOperation = operationName;
-      console.log(result);
-    });
+});
+
+operationEl.forEach((operation) => {
+  operation.addEventListener("click", (e) => {
+    if (!dis2Num) return;
+    haveDot = false;
+    const operationName = e.target.innerHTML;
+    if (dis1Num && dis2Num && lastOperation) {
+      mathOperation();
+    } else {
+      result = parseFloat(dis2Num);
+    }
+    clearVar(operationName);
+    lastOperation = operationName;
+    console.log(result);
   });
+});
   function clearVar(name = "") {
     dis1Num += dis2Num + " " + name + " ";
     display1El.innerText = dis1Num;
@@ -54,16 +58,20 @@ numbersEl.forEach((number) => {
   
   function mathOperation() {
     if (lastOperation === "x") {
-      result = parseFloat(result) * parseFloat(dis2Num);
+        result = parseFloat(result) * parseFloat(dis2Num);
     } else if (lastOperation === "+") {
-      result = parseFloat(result) + parseFloat(dis2Num);
+        result = parseFloat(result) + parseFloat(dis2Num);
     } else if (lastOperation === "-") {
-      result = parseFloat(result) - parseFloat(dis2Num);
-    } else if (lastOperation === "/") {
-      result = parseFloat(result) / parseFloat(dis2Num);
+        result = parseFloat(result) - parseFloat(dis2Num);
+    } else if (lastOperation === "÷") {
+        result = parseFloat(result) / parseFloat(dis2Num);
     } else if (lastOperation === "%") {
-      result = parseFloat(result) % parseFloat(dis2Num);
-    }
+        result = parseFloat(result) % parseFloat(dis2Num);
+    } else if (lastOperation === "x²") {
+        result = parseFloat(result^2) ;
+    } else if (lastOperation === "+/-") {
+        result = parseFloat(-result) ;
+      } 
   }
   // operation();
   
@@ -133,6 +141,7 @@ numbersEl.forEach((number) => {
       }
     });
   }
+  
   function clickEqual() {
     equalEl.click();
   }

@@ -18,12 +18,12 @@ let haveDot = false;
 /**疑問:在電腦上是無法按照字符排列的，可能使用了n1=n1*10+n2 = n1 n2*/
 numbersEl.forEach((number) => {
     number.addEventListener("click", (e) => {
-      if (e.target.innerText === "." && !haveDot) {
+      if (e.target.innerHTML === "." && !haveDot) {
         haveDot = true;
-      } else if (e.target.innerText === "." && haveDot) {
+      } else if (e.target.innerHTML === "." && haveDot) {
         return;
       }
-      dis2Num += e.target.innerText;
+      dis2Num += e.target.innerHTML;
       display2El.innerText = dis2Num;
       // console.log();
     });
@@ -33,7 +33,7 @@ numbersEl.forEach((number) => {
     operation.addEventListener("click", (e) => {
       if (!dis2Num) return;
       haveDot = false;
-      const operationName = e.target.innerText;
+      const operationName = e.target.innerHTML;
       if (dis1Num && dis2Num && lastOperation) {
         mathOperation();
       } else {
