@@ -34,8 +34,8 @@
 
 ## :sparkles: 目前功能 ##
 
-:cross_mark: 倒數功能;\
-:cross_mark: 切換正負;\
+❌: 倒數功能;\
+❌: 切換正負;
 
 ## :rocket: 使用語言 ##
 
