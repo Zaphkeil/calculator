@@ -32,10 +32,10 @@
 
 這是我們的一次設計的網頁，以線上工具的想法出發，目前完成了計算機的部分
 
-## :sparkles: Features ##
+## :sparkles: 目前功能 ##
 
-:heavy_cross_mark: 倒數功能;\
-:heavy_cross_mark: 切換正負;\
+:cross_mark: 倒數功能;\
+:cross_mark: 切換正負;\
 
 ## :rocket: 使用語言 ##
 
