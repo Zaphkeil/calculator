@@ -34,15 +34,16 @@
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_cross_mark: 倒數功能;\
+:heavy_cross_mark: 切換正負;\
 
 ## :rocket: 使用語言 ##
 
 The following tools were used in this project:
 
-- H
+- HTML
+- CSS
+- JavaScropt
 
 
 ## :checkered_flag: Starting ##
