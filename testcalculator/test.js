@@ -74,12 +74,13 @@ function mathOperation() {
   } else if (lastOperation === "÷") {
     result = parseFloat(result) / parseFloat(dis2Num);
   } else if (lastOperation === "%") {
-    result = parseFloat(result) % parseFloat(dis2Num);
+    dis2Num = parseFloat(result) / 100;
+    display2El.innerText = dis2Num; 
   } else if (lastOperation === "x^n") {
     result = Math.pow(result , dis2Num);
   } else if (lastOperation === "n√x") {
     result = Math.pow(result , 1/dis2Num);
-  }
+  } 
 };
 
 // operation();
