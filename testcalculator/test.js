@@ -7,7 +7,7 @@ const tempResultEl = document.querySelector(".temp-result");/*讀取html中的te
 const numbersEl = document.querySelectorAll(".number");/*讀取html中的number按鈕*/
 const oops = document.querySelectorAll(".del")
 const operationEl = document.querySelectorAll(".op");/*讀取html中的op按鈕*/
-const EoperationEl = document.querySelectorAll(".eop")
+const EoperationEl = document.querySelectorAll(".eop")/** else operation */
 const equalEl = document.querySelector(".equal");/*讀取html中的equal按鈕*/
 const clearAllEl = document.querySelector(".all-clear");
 const clearLastEl = document.querySelector(".last-entity-clear");
@@ -16,6 +16,7 @@ let dis2Num = "";
 let result = null;
 let lastOperation = "";
 let haveDot = false;/**是否有小數點 */
+let negative = false;/**負號時 false */
 /**add~~為新增一個監聽事件，number為在這個宣告的函數下 */
 /**疑問:在電腦上是無法按照字符排列的，可能使用了n1=n1*10+n2 = n1 n2*/
 
@@ -55,14 +56,6 @@ operationEl.forEach((operation) => {
   });
 });
 
-EoperationEl.forEach((Eoperation) => {
-  Eoperation.addEventListener("click", (e) => {
-    if (lastOperation === "1/x")
-    dis2Num = 1/dis2Num
-    
-  });
-});
-
 function clearVar(name = "") {
   dis1Num += dis2Num + " " + name + " ";
   display1El.innerText = dis1Num;
@@ -85,9 +78,9 @@ function mathOperation() {
   } else if (lastOperation === "x^n") {
     result = Math.pow(result , dis2Num);
   } else if (lastOperation === "n√x") {
-      result = Math.pow(result , 1/dis2Num);
+    result = Math.pow(result , 1/dis2Num);
   }
-}
+};
 
 // operation();
 

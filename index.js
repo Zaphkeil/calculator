@@ -8,14 +8,16 @@ calculatorlink.addEventListener("click", function(){
 });
 
 randomlink.addEventListener("click", function(){
-    window.location.href = 'https://zaphkeil.github.io/calculator/randomtool/index.html';
+    window.location.href = 'https://zaphkeil.github.io/calculator/randomtool/';
 
-});
-
-githublink.addEventListener("click", function(){
-    window.open('https://github.com/Zaphkeil/calculator');
 });
 
 calculator_Js2link.addEventListener("click", function(){
-    window.open('https://github.com/Zaphkeil/testcalculator');
+    window.open('https://github.com/Zaphkeil/testcalculator/');
 });
+
+githublink.addEventListener("click", function(){
+    window.open('https://github.com/Zaphkeil/calculator/');
+});
+
+
