@@ -43,7 +43,7 @@ The following tools were used in this project:
 
 - HTML
 - CSS
-- JavaScropt
+- JavaScrpt
 
 
 ## :checkered_flag: Starting ##
