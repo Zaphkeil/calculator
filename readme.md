@@ -19,9 +19,9 @@
 <hr> -->
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#dart-about">關於我們</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">目前功能</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">使用語言</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="https://github.com/Zaphkeil/calculator.git" target="_blank">Author</a>
 </p>
